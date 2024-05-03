@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BiArrowFromBottom } from 'react-icons/bi'
+import { ArrowUpIcon } from "@heroicons/react/solid";
 import React from 'react';
 
 export default function BackToTop() {
@@ -34,16 +34,16 @@ export default function BackToTop() {
   }, [])
 
   return (
-    <div className="fixed bottom-3 right-4">
+    <div className="fixed bottom-3 right-4 z-50">
       <button
         type="button"
         onClick={scrollToTop}
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',
-          'bg-red-500 hover:bg-red-600 focus:ring-red-600 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2',
+          'bg-red-500 hover:bg-red-600 focus:ring-red-600 z-50 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2',
         )}
       >
-        <BiArrowFromBottom className="h-6 w-6" aria-hidden="true" />
+        <ArrowUpIcon className="h-6 w-6 z-50" aria-hidden="true" />
       </button>
     </div>
   )
