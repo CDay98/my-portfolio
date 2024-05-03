@@ -34,7 +34,7 @@ export default function BackToTop() {
   }, [])
 
   return (
-    <div className="fixed bottom-3 right-4 z-50">
+    <div className="fixed bottom-3 right-4 z-50 sm: bottom-6">
       <button
         type="button"
         onClick={scrollToTop}
