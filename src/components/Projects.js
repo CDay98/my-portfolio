@@ -12,19 +12,19 @@ export default function Projects() {
             Projects
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-full p-4">
-              <div className="flex relative">
+              className="block relative overflow-hidden">
+              <div className="border border-gray-800 bg-gray-900 hover:bg-gray-800 transition duration-300">
                 <img
                   alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="absolute inset-0 px-8 py-10 z-12 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 transition duration-300">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>

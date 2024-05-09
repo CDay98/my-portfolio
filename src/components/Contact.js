@@ -36,10 +36,9 @@ export default function Contact() {
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
-            //style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=Grand+Rapids,+MI,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md whitespace-nowrap">
+          <div className="bg-gray-900 relative flex flex-wrap item-start py-6 rounded shadow-md whitespace-nowrap">
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0" >
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
