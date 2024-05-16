@@ -53,7 +53,7 @@ export const testimonials = [
 export const skills = [
   "Python",
   "Javascript",
-  "React Native",
+  "React / React Native",
   "SQL",
   "APIs",
   "Oracle Database",
