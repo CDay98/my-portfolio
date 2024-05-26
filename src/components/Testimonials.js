@@ -4,15 +4,15 @@ import { testimonials } from "../data";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials">
+    <section id="testimonials" className="relative">
       <div className="container px-5 py-10 mx-auto text-center">
         <UsersIcon className="w-10 inline-block mb-4" />
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
           Client Testimonials
         </h1>
-        <div className="flex flex-wrap m-4">
+        <div className="flex flex-wrap m-4 blur-sm">
           {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full">
+            <div className="p-4 md:w-1/2 w-full" key={testimonial.name}>
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                 <p className="leading-relaxed mb-6">{testimonial.quote}</p>
@@ -34,6 +34,9 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75">
+          <h2 className="text-white text-3xl font-bold">In Progress...</h2>
         </div>
       </div>
     </section>
