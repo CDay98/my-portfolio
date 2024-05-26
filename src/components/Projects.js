@@ -16,8 +16,9 @@ export default function Projects() {
           {projects.map((project) => (
             <a
               href={project.link}
+              target="_blank"
               key={project.image}
-              className="block relative overflow-hidden">
+              className="block relative overflow-x-scroll">
               <div className="border border-gray-800 bg-gray-900 hover:bg-gray-800 transition duration-300">
                 <img
                   alt="gallery"
