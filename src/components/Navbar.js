@@ -40,9 +40,9 @@ export default function Navbar() {
           <a href="#skills" className="mr-5 hover:text-white">
             Skills
           </a>
-          <a href="#testimonials" className="mr-5 hover:text-white">
+          {/* <a href="#testimonials" className="mr-5 hover:text-white">
             Testimonials
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/colin-day-907623228/"
             target="_blank"
