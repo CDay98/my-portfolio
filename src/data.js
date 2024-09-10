@@ -31,14 +31,14 @@ export const projects = [
     buttonName: "No Repo Available",
   },
   {
-    title: "PlaceHolderProject",
-    subtitle: "PlaceHolderProject",
+    title: "Car Crew",
+    subtitle: "MERN Stack", 
     description:
-      "PlaceHolderProject",
+      "This Car Crew web application is built using the MERN stack (MongoDB, Express, React, and Node.js) with integration of Clerk for user authentication, Stripe for payment processing, and UploadThing for file uploads. The platform allows event organizers to host and manage car meets. Users can seamlessly sign up, view event details, and pay for events securely. Its efficient architecture supports scalable features, ensuring smooth handling of user data, media uploads, and payments, making it a comprehensive solution for automotive communities looking to connect through shared events and experiences. Find the repo on my github!",
     image: "./project-4.gif",
-    link: "",
+    link: "https://car-crew.vercel.app/events/66d3382a7a066136f9f1628f",
     target: "_blank",
-    buttonName: "",
+    buttonName: "View Website",
   },
 ];
 
